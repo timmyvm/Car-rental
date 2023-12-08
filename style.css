@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+.row {
+  max-width: 1480px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+:root {
+  --primary: #ff4d30;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  margin: 20px auto;
+  max-width: 1480px;
+  padding: 0 20px; /* Added padding to the container */
+}
+
+.header_container,
+.nav_container {
+  margin: 20px auto; /* Adjust as needed */
+}
+
+/* Nav bar */
+
+nav {
+  background-color: transparent;
+  height: 100%;
+}
+
+.nav_container {
+  margin-top: 20px;
+}
+
+.nav_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.nav_logo {
+  width: 145px;
+  height: auto;
+}
+
+.nav_link {
+  font-weight: 600;
+  padding: 0 10px;
+  transition: 300ms ease;
+}
+
+.nav_register_button {
+  background-color: var(--primary);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+  margin: 10px;
+  transition: 300ms ease;
+}
+
+.nav_link:hover {
+  color: var(--primary);
+}
+
+.nav_signin {
+  font-weight: 600;
+  transition: 300ms ease;
+}
+
+.nav_signin:hover {
+  color: var(--primary);
+}
+
+.nav_signin .nav_register_button:hover {
+  box-shadow: 0 10px 30px 1px rgba(255, 83, 48, 0.35);
+}
+
+/* Header */
+
+.header_row {
+  max-width: 1480px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.header_backround {
+  position: absolute;
+  top: -15px;
+  right: 0px;
+  width: 36%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.header_car_image {
+  right: 240px;
+  position: absolute;
+  z-index: 1;
+  width: 832px;
+  height: auto;
+}
+
+.orange_big {
+  color: var(--primary);
+}
+
+.header_h4 {
+  font-size: 20px;
+}
+
+.header_h1 {
+  font-size: 54px;
+}
