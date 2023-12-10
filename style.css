@@ -53,9 +53,17 @@ header {
 }
 
 /* Nav Styles */
-nav {
+.main_nav {
   background-color: transparent;
   z-index: 2;
+}
+
+.nav_menu {
+  display: none;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 24px;
 }
 
 .nav_container {
@@ -540,7 +548,7 @@ header {
 .footer_content {
   display: flex;
   flex-direction: column;
-  padding-bottom:30px;
+  padding-bottom: 30px;
   gap: 8px;
   width: 20%;
 }
@@ -551,11 +559,11 @@ header {
   gap: 8px;
 }
 
-.footer_content_link:hover{
+.footer_content_link:hover {
   color: var(--primary);
 }
 
-.footer_content_link{
+.footer_content_link {
   transition: 300ms ease;
 }
 
@@ -591,7 +599,7 @@ header {
   background-color: #ececec;
 }
 
-.footer_content_email_form_submit{
+.footer_content_email_form_submit {
   height: 48px;
   font-size: 16px;
   font-weight: 700;
@@ -604,14 +612,105 @@ header {
   transition: 300ms ease;
 }
 
-.footer_content_email_form_submit:hover{
+.footer_content_email_form_submit:hover {
   box-shadow: 0 10px 15px 5px rgba(255, 83, 48, 0.35);
 }
 
-.footer_content_company_link{
+.footer_content_company_link {
   transition: 300ms ease;
 }
 
-.footer_content_company_link:hover{
+.footer_content_company_link:hover {
   color: var(--primary);
+}
+
+/* nav menu */
+
+.nav__menu {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 24px;
+  display: none;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f8f8f8;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 200ms ease;
+}
+
+.open .menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu__close {
+  position: absolute;
+  top: 44px;
+  right: 86px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: black !important;
+  cursor: pointer;
+}
+
+.menu__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.menu__link {
+  color: black;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.fa-x {
+  font-size: 24px;
+  color: black;
+}
+/* Media !!!!!!!!!! so fun */
+
+@media (max-width: 1440px) {
+  .header_backround {
+    top: -50px;
+    width: 35%;
+    right: -60px;
+    object-fit: fill;
+  }
+
+  .header_car_image {
+    width: 80%;
+    height: auto;
+    margin-left: 80px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav_links,
+  .nav_register {
+    display: none;
+  }
+  .nav_menu {
+    display: block;
+    z-index: 4;
+  }
+}
+
+@media (max-width: 768px) {
 }

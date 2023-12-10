@@ -9,6 +9,7 @@
       src="https://kit.fontawesome.com/88a0810fa9.js"
       crossorigin="anonymous"
     ></script>
+    <script src="app.js"></script>
   </head>
   <body>
     <!-- Nav -->
@@ -30,7 +31,24 @@
             <a class="nav_signin" href="">Sign in</a>
             <button class="nav_register_button">Register</button>
           </div>
-        </div>
+          <button class="nav_menu" onclick="openMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>   
+      </div>
+    </nav>
+
+    <nav class="menu">
+      <button class="menu__close" onclick="closeMenu()">
+        <i class="fa-solid fa-x"></i>
+      </button>
+      <div class="menu__links">
+        <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+        <a href="#" class="menu__link" onclick="closeMenu()">About</a>
+        <a href="#" class="menu__link" onclick="closeMenu()">Vehicle Models</a>
+        <a href="#" class="menu__link" onclick="closeMenu()">Testimonials</a>
+        <a href="#" class="menu__link" onclick="closeMenu()">Our Team</a>
+        <a href="#" class="menu__link" onclick="closeMenu()">Contact</a>
       </div>
     </nav>
 
